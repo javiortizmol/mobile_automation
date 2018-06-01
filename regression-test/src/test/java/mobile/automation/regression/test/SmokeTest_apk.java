@@ -21,7 +21,7 @@ import pageObjects.HomePageObjects;
 
 
 
-public class smokeTest_apk 
+public class SmokeTest_apk 
 {
 	private WebDriver driver;
 
@@ -34,7 +34,7 @@ public class smokeTest_apk
 		capabilities.setCapability("deviceName", "test-demo");
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("platformVersion", "7.0");
-		capabilities.setCapability("app", "/Users/javier.ortiz/Documents/agendadigital.apk");
+		capabilities.setCapability("app", "/Users/javier.ortiz/Documents/apps/android/agendadigital.apk");
 		
 		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		
