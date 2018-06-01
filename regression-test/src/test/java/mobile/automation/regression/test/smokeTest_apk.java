@@ -30,17 +30,11 @@ public class smokeTest_apk
 	public void setUp() throws Exception {
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		//09fac6e0
 		
 		capabilities.setCapability("deviceName", "test-demo");
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("platformVersion", "7.0");
-		//capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		//capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
-		//capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "test-demo");
-		
 		capabilities.setCapability("app", "/Users/javier.ortiz/Documents/agendadigital.apk");
-		
 		
 		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
 		
@@ -48,7 +42,7 @@ public class smokeTest_apk
 
 	@AfterClass
 	public void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@Test
@@ -80,6 +74,7 @@ public class smokeTest_apk
 		//Check if the name was saved correctly and then click on Ok Button
 		Assert.assertTrue(dataPage.WidgetEnterConfirmationMessaggeSaveName.getText().contains(expectedConfirmationMessaggeNameSaved));
 		dataPage.WidgetEnterConfirmationMessaggeSaveNameOkButton.click();
+		
 	}
 	
 }
