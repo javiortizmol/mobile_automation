@@ -53,7 +53,7 @@ public class SmokeTest_apk
 		
 		String expectedMessage="This feature can be useful in the following situations:";
 		String expectedConfirmationMessaggeNameSaved="A copy of the data has been saved to TestCases";
-		Thread.sleep(10000);
+		Thread.sleep(4000);
 		
 		//Click on Data Buttom from App Home
 		homePage.DataButton.click();
