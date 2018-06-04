@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="mobile.automation.regression.test.smokeTest_apk">
+      <class name="mobile.automation.regression.test.smokeTest_web_site">
         <methods>
-          <include name="test_apk"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="test_web_site_checkout_payu"/>
         </methods>
-      </class> <!-- mobile.automation.regression.test.smokeTest_apk -->
+      </class> <!-- mobile.automation.regression.test.smokeTest_web_site -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

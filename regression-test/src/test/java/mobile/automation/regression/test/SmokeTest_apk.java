@@ -16,8 +16,8 @@ import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
 import io.appium.java_client.remote.MobileCapabilityType;
-import pageObjects.DataManagerPageObjects;
-import pageObjects.HomePageObjects;
+import page.objects.apk.DataManagerPageObjects;
+import page.objects.apk.HomePageObjects;
 
 
 
